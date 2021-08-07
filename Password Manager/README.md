@@ -23,3 +23,21 @@ Note: You need to keep this key in a safe place. If you lose the key, you won't 
 
 
 (Source: GeeksforGeeks)
+
+
+### Steps:
+
+
+1. **Generating a key:** Using the `generate_key()` method, a key is generated. This function is only run once.
+
+2. **Load key:** Once a key is generated, it's necessary to load the key in the method in order to encrypt passwords.
+
+3. Now, the password is ready to be encrypted. This is a three step process: <br>
+     a. encode the message <br>
+     b. initialize the Fernet class <br>
+     c. pass the encoded message to encrypt() method
+
+4. Ask the user which mode he/she wants to choose.<br>
+    a. view: Views all the passwords and the accounts linked with it<br>
+    b. add: add a new password<br>
+    c. q: quit
